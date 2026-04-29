@@ -42,6 +42,7 @@ function love.load()
     love.window.setTitle('The Dimensional Traveler')
 
     music = love.audio.newSource('assets/sounds/gameBackgroundMusic.wav', 'stream')
+    music:setLooping(true)
     music:setVolume(0.1)
     music:play()
 
